@@ -8,11 +8,8 @@ public class StringCalculator {
    static int add(String input) {
 
      String delimiter = ",|\n";
-//     String delimiterHeader= header.substring(2);
      String[] parts =input.split("\n",2);
      boolean startsWith =input.startsWith("//");
-//     boolean startsWithHeader = delimiterHeader.startsWith("[");
-
 
      if (input.isEmpty()) {
          return 0;
@@ -27,28 +24,16 @@ public class StringCalculator {
          throw new NumberFormatException("Errror: Invalid inputs");
      }
 
-//     if (startsWithHeader){
-//        delimiter =delimiterHeader.substring(1,delimiterHeader.length()-1);
-//     }
      List<String> num = Arrays.asList(input.split(delimiter));
 
 
-//         try {
-//             if (getIntStream(num).anyMatch(n->n<0))
-//                 throw new IllegalArgumentException("A negative number was entered");
-//         }catch (IllegalArgumentException e){
-//             System.out.println("A negative number was entered");
-//         }
+         try {
+             if (getIntStream(num).anyMatch(n->n<0))
+                 throw new IllegalArgumentException();
+         }catch (IllegalArgumentException e){
+             System.out.println("ERROR: negatives not allowed");
+         }
 
-       if (!num.isEmpty()) {
-           try {
-               throw new IllegalArgumentException(
-                       "negatives not allowed " + String.join(",", num));
-           } catch (IllegalArgumentException e){
-               System.out.println("ERROR: negatives not allowed");
-           }
-
-       }
 
      return getIntStream(num).sum();
  }
