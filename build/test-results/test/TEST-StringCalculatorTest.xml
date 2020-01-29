@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StringCalculatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-01-29T11:26:05" hostname="recruit-ThinkCentre-M73" time="0.025">
+  <properties/>
+  <testcase name="addDelimeterOnNumber()" classname="StringCalculatorTest" time="0.012"/>
+  <testcase name="addSpace()" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="addDelimeterNumber()" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="addTwoNumber()" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="addNewLineNumber()" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="addThreeNumber()" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="addOneNUmber()" classname="StringCalculatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

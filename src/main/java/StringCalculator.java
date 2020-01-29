@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 
 public class StringCalculator {
 
- static int add(String input) {
+   static int add(String input) {
 
      String delimiter = ",|\n";
 //     String delimiterHeader= header.substring(2);
@@ -14,8 +14,9 @@ public class StringCalculator {
 //     boolean startsWithHeader = delimiterHeader.startsWith("[");
 
 
-     if (input.isEmpty())
+     if (input.isEmpty()) {
          return 0;
+     }
 
      if (startsWith){
         delimiter =parts[0].substring(2);
@@ -32,12 +33,22 @@ public class StringCalculator {
      List<String> num = Arrays.asList(input.split(delimiter));
 
 
-         try {
-             if (getIntStream(num).anyMatch(n->n<0))
-                 throw new IllegalArgumentException("A negative number was entered");
-         }catch (IllegalArgumentException e){
-             System.out.println("A negative number was entered");
-         }
+//         try {
+//             if (getIntStream(num).anyMatch(n->n<0))
+//                 throw new IllegalArgumentException("A negative number was entered");
+//         }catch (IllegalArgumentException e){
+//             System.out.println("A negative number was entered");
+//         }
+
+       if (!num.isEmpty()) {
+           try {
+               throw new IllegalArgumentException(
+                       "negatives not allowed " + String.join(",", num));
+           } catch (IllegalArgumentException e){
+               System.out.println("ERROR: negatives not allowed");
+           }
+
+       }
 
      return getIntStream(num).sum();
  }
