@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e293a8ef-3b8d-488a-a0ce-99e19c222c8e" name="Default Changelist" comment="" />
+    <list default="true" id="e293a8ef-3b8d-488a-a0ce-99e19c222c8e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/StringCalculator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StringCalculator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,9 +153,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="641" y="354" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580287536205">
-      <screen x="0" y="27" width="1600" height="873" />
+    <state x="547" y="292" width="308" height="176" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580857629615">
+      <screen x="0" y="27" width="1366" height="708" />
     </state>
+    <state x="547" y="292" width="308" height="176" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1580857629615" />
     <state x="641" y="354" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1600.873@0.27.1600.873" timestamp="1580287536205" />
     <state x="416" y="129" width="524" height="502" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1579794054565">
       <screen x="0" y="27" width="1366" height="708" />
