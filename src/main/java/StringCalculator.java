@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -69,16 +70,62 @@ public class StringCalculator {
                 .collect(Collectors.joining("|"));
     }
 
+    public List<Integer> multipleDelimeter(String inputValue)
+            throws RuntimeException {
+
+        String stringArray[] = inputValue
+                .split("[//\n,!.?:;@#$%^&*()_+=?'<>+]");
+        List<Integer> list = new ArrayList<Integer>();
+
+        for (int i = 0; i < stringArray.length; i++) {
+
+            String string = stringArray[i];
+
+            if (null != string && !string.equals("")) {
+                if (isInteger(string)) {
+                    list.add(Integer.parseInt(string));
+                }
+            }
+
+        }
+
+        StringBuilder negativeValue = new StringBuilder();
+        for (Integer integer : list) {
+            if (integer < 0)
+                negativeValue.append(integer + " ");
+        }
+
+        if (!negativeValue.toString().equals("")) {
+            throw new RuntimeException(
+                    "Negatives not allowed. Negative values: "
+                            + negativeValue.toString());
+        }
+
+        return list;
+    }
+
+    public static boolean isInteger(String inputValue) {
+        try {
+            Integer.parseInt(inputValue);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
 
 
     public void inputs(){
 
+        String[] split = "1,2|3.4$5".split("[,|.]");
+        System.out.println(Arrays.toString(split));
         System.out.println ("add(\"\") = " +(add("")));
         System.out.println ("add(\"2,3\") = " +(add("2,3")));
         System.out.println ("add(\"1\\n2,3\") = " +(add("1\n2,3")));
         System.out.println ("add(\"//;\\n1;2\") = " +(add("//;\n1;2")));
         System.out.println ("add(\"//4\\n142\") = " +(add("//4\n142")));
-        System.out.println ("add(\"//4\\n142\") = " +(add(parseDelimiter ("//[:D][&]\n:D2&3"))));
+        System.out.println(add("1,-1"));
+        System.out.println ("add(\"//[:D][&]\\n:D2&3\") = " +(multipleDelimeter("//[:D][&]\n:D2&3")));
         System.out.println("add(\"//[***]\\n1***2***3\") = "+(add ( customerDelimiter ("//[***]\n1***2***3"))));
     }
 }
