@@ -8,14 +8,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/StringCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StringCalculator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/StringCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/StringCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StringCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StringCalculatorTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +34,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,13 +63,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../product-asset-managment" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
@@ -159,38 +172,48 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="641" y="354" width="308" height="176" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581936403641">
-      <screen x="0" y="27" width="1600" height="873" />
+    <state x="260" y="58" width="848" height="677" key="#Project_Structure" timestamp="1583789757440">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="260" y="58" width="848" height="677" key="#Project_Structure/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583789757440" />
+    <state x="547" y="305" width="308" height="150" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583788684373">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="547" y="292" width="308" height="176" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1580857629615" />
+    <state x="547" y="305" width="308" height="150" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583788684373" />
     <state x="641" y="354" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1600.873@0.27.1600.873" timestamp="1581936403641" />
     <state x="416" y="129" width="524" height="502" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1579794054565">
       <screen x="0" y="27" width="1366" height="708" />
     </state>
     <state x="416" y="129" width="524" height="502" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579794054565" />
-    <state x="466" y="138" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579793440617">
-      <screen x="0" y="27" width="1366" height="708" />
+    <state x="466" y="143" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583789477609">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="466" y="138" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579793440617" />
-    <state width="1554" height="218" key="GridCell.Tab.0.bottom" timestamp="1581939049670">
-      <screen x="0" y="27" width="1600" height="873" />
+    <state x="466" y="143" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583789477609" />
+    <state width="1285" height="175" key="GridCell.Tab.0.bottom" timestamp="1583789659683">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1300" height="154" key="GridCell.Tab.0.bottom/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579991695034" />
+    <state width="1285" height="175" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583789659683" />
     <state width="1554" height="218" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1581939049670" />
-    <state width="1554" height="218" key="GridCell.Tab.0.center" timestamp="1581939049669">
-      <screen x="0" y="27" width="1600" height="873" />
+    <state width="1285" height="175" key="GridCell.Tab.0.center" timestamp="1583789659682">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1300" height="154" key="GridCell.Tab.0.center/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579991695034" />
+    <state width="1285" height="175" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583789659682" />
     <state width="1554" height="218" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1581939049669" />
-    <state width="1554" height="218" key="GridCell.Tab.0.left" timestamp="1581939049669">
-      <screen x="0" y="27" width="1600" height="873" />
+    <state width="1285" height="175" key="GridCell.Tab.0.left" timestamp="1583789659682">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1300" height="154" key="GridCell.Tab.0.left/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579991695034" />
+    <state width="1285" height="175" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583789659682" />
     <state width="1554" height="218" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1581939049669" />
-    <state width="1554" height="218" key="GridCell.Tab.0.right" timestamp="1581939049669">
-      <screen x="0" y="27" width="1600" height="873" />
+    <state width="1285" height="175" key="GridCell.Tab.0.right" timestamp="1583789659683">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1300" height="154" key="GridCell.Tab.0.right/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579991695034" />
+    <state width="1285" height="175" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583789659683" />
     <state width="1554" height="218" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1581939049669" />
     <state x="166" y="27" width="1024" height="708" key="SettingsEditor" timestamp="1579665057653">
       <screen x="0" y="27" width="1366" height="708" />
@@ -208,10 +231,11 @@
       <screen x="0" y="27" width="1366" height="708" />
     </state>
     <state x="347" y="27" width="662" height="708" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579737105651" />
-    <state x="495" y="99" width="442" height="565" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1580296202149">
-      <screen x="0" y="27" width="1600" height="873" />
+    <state x="423" y="88" width="432" height="480" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583789795053">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="423" y="85" width="509" height="590" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579734613299" />
+    <state x="423" y="88" width="432" height="480" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583789795053" />
     <state x="495" y="99" width="442" height="565" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.27.1600.873@0.27.1600.873" timestamp="1580296202149" />
     <state x="734" y="244" width="524" height="491" key="extract.method.dialog" timestamp="1579796355505">
       <screen x="0" y="27" width="1366" height="708" />

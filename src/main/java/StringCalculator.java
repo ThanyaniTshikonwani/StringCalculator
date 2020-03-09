@@ -1,132 +1,59 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+
 
 public class StringCalculator {
 
-    static int add(String input) {
+    static int add(String input) throws Exception {
 
-        String delimiter = ",|\n";
-        String[] parts =input.split("\n");
-        boolean startsWith =input.startsWith("//");
+            StringBuilder negative = new StringBuilder();
+            // Declaring delimiters
+            String delimiter = "[,\n]";
 
-        if (input.isEmpty())
-            return 0;
-        try {
-            if (input.contains("\n1000;")){
-                throw new NumberFormatException();
+            // Converting String into Numbers
+            if (input.startsWith("//")) {
+                String[] parts = input.split("\n");
+                delimiter = parts[0].substring(2);
+                input = parts[1];
             }
-        }catch (NumberFormatException e){
-            System.out.println("ERROR: Invalid inputs 1000");
-        }
+            // Escaping delimiter metacharacters and backslash
+        delimiter = delimiter.replace("\\","\\\\");
+        delimiter = delimiter.replace("-","\\-");
+        String[] numbers = input.split("["+delimiter+"]+");
 
-        if (startsWith){
-            delimiter =parts[0].substring(2);
-            input = parts[1];
-        }
-        customerDelimiter ( input );
+            // Handling Errors
+            if (input.isEmpty()) {
+                return 0;
+            } else if(input.startsWith(" ")|!input.startsWith("//")&& input.contains("//")|
+                    !Pattern.compile("[0-9]").matcher(input.substring(input.length()-1)).matches()) {
+                System.out.println ("ERROR: invalid input");
+            }else
 
+                // Throwing Exception on negative numbers
+                for (String a : numbers) {
+                    if (Integer.parseInt(a) < 0) {
+                        negative.append(a);
+                    }
+                    if (a.equals(numbers[numbers.length - 1]) && (negative.length() > 0)) {
+                        throw new Exception("ERROR: negatives not allowed " + negative);
+                    }
 
-        List<String> num = Arrays.asList(input.split(delimiter));
-        try {
-            if (getIntStream(num).anyMatch(n->n<0))
-                throw new IllegalArgumentException();
-        }catch (IllegalArgumentException e){
-            System.out.println ("error : negatives number are not allowed");
-        }
-        return getIntStream(num).sum();
-    }
+                }
 
-    private static IntStream getIntStream(List<String> num) {
-        return num.stream().mapToInt(Integer::parseInt).map(n->n%1000);
-    }
-
-    private static String customerDelimiter(String input) {
-        input = input.replace("\n", ",");
-        if(input.startsWith("//[")) {
-            String delim = input.substring(3, input.indexOf ( "]" ));
-            if(delim.contains("-"))
-                throw new IllegalArgumentException("Illegal delimiter: " + delim);
-            input = input.substring(5 + delim.length());
-            input = input.replace(delim, ",");
-        }
-        return input;
-    }
-
-
-
-    private static String parseDelimiter(String header) {
-
-        String delimiter = header.substring(2);
-        if (delimiter.startsWith("[")) {
-            delimiter = delimiter.substring(1, delimiter.length() - 1);
-        }
-        return Stream.of(delimiter.split("]\\["))
-                .map(Pattern::quote)
-                .collect(Collectors.joining("|"));
-    }
-
-    public List<Integer> multipleDelimeter(String inputValue)
-            throws RuntimeException {
-
-        String stringArray[] = inputValue
-                .split("[//\n,!.?:;@#$%^&*()_+=?'<>+]");
-        List<Integer> list = new ArrayList<Integer>();
-
-        for (int i = 0; i < stringArray.length; i++) {
-
-            String string = stringArray[i];
-
-            if (null != string && !string.equals("")) {
-                if (isInteger(string)) {
-                    list.add(Integer.parseInt(string));
+            // Add all integers
+            int sum = 0;
+            for (String inputs : numbers) {
+                int nums = Integer.parseInt(inputs);//convert strings to integer
+                if (nums < 1000) {
+                    sum += nums;
                 }
             }
-
+            return sum;
         }
 
-        StringBuilder negativeValue = new StringBuilder();
-        for (Integer integer : list) {
-            if (integer < 0)
-                negativeValue.append(integer + " ");
-        }
-
-        if (!negativeValue.toString().equals("")) {
-            throw new RuntimeException(
-                    "Negatives not allowed. Negative values: "
-                            + negativeValue.toString());
-        }
-
-        return list;
-    }
-
-    public static boolean isInteger(String inputValue) {
-        try {
-            Integer.parseInt(inputValue);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
-        }
-    }
-
-
-
-    public void inputs(){
-
-        String[] split = "1,2|3.4$5".split("[,|.]");
-        System.out.println(Arrays.toString(split));
-        System.out.println ("add(\"\") = " +(add("")));
-        System.out.println ("add(\"2,3\") = " +(add("2,3")));
+    public void inputs() throws Exception {
         System.out.println ("add(\"1\\n2,3\") = " +(add("1\n2,3")));
-        System.out.println ("add(\"//;\\n1;2\") = " +(add("//;\n1;2")));
-        System.out.println ("add(\"//4\\n142\") = " +(add("//4\n142")));
-        System.out.println(add("1,-1"));
-        System.out.println ("add(\"//[:D][&]\\n:D2&3\") = " +(multipleDelimeter("//[:D][&]\n:D2&3")));
-        System.out.println("add(\"//[***]\\n1***2***3\") = "+(add ( customerDelimiter ("//[***]\n1***2***3"))));
+
     }
 }
 
