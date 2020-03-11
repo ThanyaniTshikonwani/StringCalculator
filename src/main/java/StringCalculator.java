@@ -1,12 +1,15 @@
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.regex.Pattern;
+import java.util.stream.IntStream;
 
 
 public class StringCalculator {
 
     static int add(String input) throws Exception {
 
-        StringBuffer negative = new StringBuffer();
+        StringBuffer negativeNumbers = new StringBuffer();
 
         // Declaring delimiters
         String delimiter = "[,\n]";
@@ -20,7 +23,9 @@ public class StringCalculator {
 
         // Escaping delimiter hyphen and backslash
         delimiter = delimiter.replace("\\","\\\\" ).replace("-","\\-");
-        String[] digits = input.split("["+delimiter+"]+");
+
+        // Getting a list of stringList from the inputs String
+        List<String> stringList = Arrays.asList(input.split("["+delimiter+"]+"));
 
         // Handling Errors
         if (input.isEmpty()) {
@@ -30,24 +35,27 @@ public class StringCalculator {
                 System.out.println ("ERROR: invalid input");
             }
 
-        // Throwing Exception on negative digits
-        for (String negativeDigits : digits) {
+        // Throwing Exception on negativeNumbers stringList
+        for (String negativeDigits : stringList) {
             if (Integer.parseInt(negativeDigits) < 0) {
-                negative.append(negativeDigits);
+                negativeNumbers.append(negativeDigits);
             }
-            if (negativeDigits.equals(digits[digits.length - 1]) && (negative.length() > 0)) {
-                throw new Exception("ERROR: negatives not allowed " + negative);
+            if (negativeDigits.equals(stringList.get(stringList.size() - 1)) && (negativeNumbers.length() > 0)) {
+                throw new Exception("ERROR: negatives not allowed " + negativeNumbers);
             }
         }
 
         // Add all integers
         int sum = 0;
-            for (String inputs : digits) {
-                int nums = Integer.parseInt(inputs);//convert strings to integer
-                if (nums < 1000) {
-                    sum += nums;
-                }
+        int stringNumbers = 0;
+        while (stringNumbers < stringList.size()){
+            int digits = Integer.parseInt(stringList.get(stringNumbers));
+            if (digits<1000){
+                sum+=digits;
             }
+            stringNumbers++;
+        }
+
             return sum;
         }
 

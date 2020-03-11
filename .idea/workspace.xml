@@ -8,11 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/StringCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/StringCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/StringCalculatorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/StringCalculatorTest.html" afterDir="false" />
@@ -213,29 +210,29 @@
     </state>
     <state x="466" y="138" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579793440617" />
     <state x="466" y="143" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583789477609" />
-    <state width="1285" height="126" key="GridCell.Tab.0.bottom" timestamp="1583965352743">
+    <state width="1285" height="126" key="GridCell.Tab.0.bottom" timestamp="1583966455417">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1300" height="154" key="GridCell.Tab.0.bottom/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579991695034" />
-    <state width="1285" height="126" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583965352743" />
+    <state width="1285" height="126" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583966455417" />
     <state width="1554" height="218" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1581939049670" />
-    <state width="1285" height="126" key="GridCell.Tab.0.center" timestamp="1583965352743">
+    <state width="1285" height="126" key="GridCell.Tab.0.center" timestamp="1583966455416">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1300" height="154" key="GridCell.Tab.0.center/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579991695034" />
-    <state width="1285" height="126" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583965352743" />
+    <state width="1285" height="126" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583966455416" />
     <state width="1554" height="218" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1581939049669" />
-    <state width="1285" height="126" key="GridCell.Tab.0.left" timestamp="1583965352743">
+    <state width="1285" height="126" key="GridCell.Tab.0.left" timestamp="1583966455416">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1300" height="154" key="GridCell.Tab.0.left/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579991695034" />
-    <state width="1285" height="126" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583965352743" />
+    <state width="1285" height="126" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583966455416" />
     <state width="1554" height="218" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1581939049669" />
-    <state width="1285" height="126" key="GridCell.Tab.0.right" timestamp="1583965352743">
+    <state width="1285" height="126" key="GridCell.Tab.0.right" timestamp="1583966455416">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1300" height="154" key="GridCell.Tab.0.right/0.27.1366.708/1366.0.1366.768@0.27.1366.708" timestamp="1579991695034" />
-    <state width="1285" height="126" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583965352743" />
+    <state width="1285" height="126" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1583966455416" />
     <state width="1554" height="218" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1581939049669" />
     <state x="166" y="27" width="1024" height="708" key="SettingsEditor" timestamp="1579665057653">
       <screen x="0" y="27" width="1366" height="708" />
