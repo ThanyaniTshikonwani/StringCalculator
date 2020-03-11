@@ -6,29 +6,31 @@ public class StringCalculator {
 
     static int add(String input) throws Exception {
 
-            StringBuffer negative = new StringBuffer();
-            // Declaring delimiters
+        StringBuffer negative = new StringBuffer();
 
-            String delimiter = "[,\n]";
+        // Declaring delimiters
+        String delimiter = "[,\n]";
 
-            // Converting String into Numbers
-            if (input.startsWith("//")) {
+        // Converting String into Numbers
+        if (input.startsWith("//")) {
                 String[] parts = input.split("\n");
                 delimiter = parts[0].substring(2);
                 input = parts[1];
             }
-            // Escaping delimiter hyphen and backslash
+
+        // Escaping delimiter hyphen and backslash
         delimiter = delimiter.replace("\\","\\\\" ).replace("-","\\-");
         String[] digits = input.split("["+delimiter+"]+");
 
-            // Handling Errors
-            if (input.isEmpty()) {
+        // Handling Errors
+        if (input.isEmpty()) {
                 return 0;
             } else if(input.startsWith(" ")|!input.startsWith("//")&& input.contains("//")|
                     !Pattern.compile("[0-9]").matcher(input.substring(input.length()-1)).matches()) {
                 System.out.println ("ERROR: invalid input");
             }
-            // Throwing Exception on negative digits
+
+        // Throwing Exception on negative digits
         for (String negativeDigits : digits) {
             if (Integer.parseInt(negativeDigits) < 0) {
                 negative.append(negativeDigits);
