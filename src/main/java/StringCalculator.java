@@ -14,17 +14,17 @@ public class StringCalculator {
         // Declaring delimiters
         String delimiter = "[,\n]";
 
-        // Converting String into Numbers
+        // Spiting the input String
         if (input.startsWith("//")) {
-                String[] parts = input.split("\n");
-                delimiter = parts[0].substring(2);
-                input = parts[1];
+                String[] split = input.split("\n");
+                delimiter = split[0].substring(2);
+                input = split[1];
             }
 
         // Escaping delimiter hyphen and backslash
         delimiter = delimiter.replace("\\","\\\\" ).replace("-","\\-");
 
-        // Getting a list of stringList from the inputs String
+        // Getting a list from the input String
         List<String> stringList = Arrays.asList(input.split("["+delimiter+"]+"));
 
         // Handling Errors
