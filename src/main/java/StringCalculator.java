@@ -6,8 +6,9 @@ public class StringCalculator {
 
     static int add(String input) throws Exception {
 
-            StringBuilder negative = new StringBuilder();
+            StringBuffer negative = new StringBuffer();
             // Declaring delimiters
+
             String delimiter = "[,\n]";
 
             // Converting String into Numbers
@@ -16,10 +17,9 @@ public class StringCalculator {
                 delimiter = parts[0].substring(2);
                 input = parts[1];
             }
-            // Escaping delimiter metacharacters and backslash
-        delimiter = delimiter.replace("\\","\\\\");
-        delimiter = delimiter.replace("-","\\-");
-        String[] numbers = input.split("["+delimiter+"]+");
+            // Escaping delimiter hyphen and backslash
+        delimiter = delimiter.replace("\\","\\\\" ).replace("-","\\-");
+        String[] digits = input.split("["+delimiter+"]+");
 
             // Handling Errors
             if (input.isEmpty()) {
@@ -27,22 +27,20 @@ public class StringCalculator {
             } else if(input.startsWith(" ")|!input.startsWith("//")&& input.contains("//")|
                     !Pattern.compile("[0-9]").matcher(input.substring(input.length()-1)).matches()) {
                 System.out.println ("ERROR: invalid input");
-            }else
+            }
+            // Throwing Exception on negative digits
+        for (String negativeDigits : digits) {
+            if (Integer.parseInt(negativeDigits) < 0) {
+                negative.append(negativeDigits);
+            }
+            if (negativeDigits.equals(digits[digits.length - 1]) && (negative.length() > 0)) {
+                throw new Exception("ERROR: negatives not allowed " + negative);
+            }
+        }
 
-                // Throwing Exception on negative numbers
-                for (String a : numbers) {
-                    if (Integer.parseInt(a) < 0) {
-                        negative.append(a);
-                    }
-                    if (a.equals(numbers[numbers.length - 1]) && (negative.length() > 0)) {
-                        throw new Exception("ERROR: negatives not allowed " + negative);
-                    }
-
-                }
-
-            // Add all integers
-            int sum = 0;
-            for (String inputs : numbers) {
+        // Add all integers
+        int sum = 0;
+            for (String inputs : digits) {
                 int nums = Integer.parseInt(inputs);//convert strings to integer
                 if (nums < 1000) {
                     sum += nums;
